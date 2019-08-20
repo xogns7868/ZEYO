@@ -1,0 +1,293 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer"
+    android:layout_width="240dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="667">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="179.6"
+            android:background="@drawable/ic_navi_rectangle"
+            android:orientation="vertical"
+            android:weightSum="179.6">
+            <LinearLayout
+                android:layout_weight="36"
+                android:layout_width="match_parent"
+                android:layout_height="0px"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:layout_weight="143.6">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="18"
+                android:orientation="horizontal"
+                android:weightSum="260">
+                <LinearLayout
+                    android:layout_weight="16"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"/>
+                <LinearLayout
+                    android:layout_weight="228"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/btn_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="#00000000"
+                        android:gravity="left"
+                        android:text="@string/log_in"
+                        android:includeFontPadding="false"
+                        android:textSize="16dp"
+                        android:textColor="#ffffff" />
+                    <TextView
+                        android:id="@+id/txt_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textSize="16dp"
+                        android:text="하고 내 체형을 저장해서"
+                        android:includeFontPadding="false"
+                        android:textColor="#ffffff"
+                        android:gravity="left"/>
+                </LinearLayout>
+
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="0dp"
+                android:layout_weight="18"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="260">
+                <LinearLayout
+                    android:layout_weight="16"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"></LinearLayout>
+                <LinearLayout
+                    android:layout_weight="228"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="더 쉽게 비교해 보세요!"
+                        android:includeFontPadding="false"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"
+                        android:gravity="left"
+                        android:id="@+id/txt_before_name"/>
+            </LinearLayout>
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="24"
+                android:weightSum="260">
+                <LinearLayout
+                    android:layout_weight="16"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"/>
+                <LinearLayout
+                    android:layout_weight="228"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:textSize="20dp"
+                        android:id="@+id/txt_after_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="#ffffff"
+                        android:includeFontPadding="false"
+                        android:gravity="left|top"/>
+            </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="33"
+                android:orientation="horizontal"
+                android:weightSum="260">
+                <LinearLayout
+                    android:layout_weight="16"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"></LinearLayout>
+                <LinearLayout
+                    android:layout_weight="228"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/btn_signup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="#00000000"
+                        android:gravity="left"
+                        android:includeFontPadding="false"
+                        android:text="회원가입하기 >"
+                        android:textColor="#ffffffff"
+                        android:textSize="12dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="16"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="46.6"
+                    android:orientation="horizontal"
+                    android:weightSum="260">
+                    <LinearLayout
+                        android:layout_weight="16"
+                        android:layout_width="0px"
+                        android:layout_height="match_parent"/>
+                    <LinearLayout
+                        android:layout_weight="228"
+                        android:layout_width="0px"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/txt_log_out"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:textSize="10dp"
+                            android:textColor="#80ffffff"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="8.4"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_margin="10dp"
+            android:layout_weight="50"
+            android:orientation="vertical"
+            android:weightSum="50">
+            <LinearLayout
+                android:layout_weight="16"
+                android:layout_width="match_parent"
+                android:layout_height="0px"></LinearLayout>
+            <LinearLayout
+                android:layout_weight="21"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:weightSum="260"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_weight="21"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent">
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#00000000"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_policy" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="21"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"></LinearLayout>
+                <LinearLayout
+                    android:layout_weight="188"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    >
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="공지사항"
+                        android:gravity="left"
+                        android:textColor="#1d1d1d"
+                        android:background="#00ff0000"
+                        android:id="@+id/btn_policy_text"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_margin="10dp"
+            android:layout_weight="50"
+            android:orientation="vertical"
+            android:weightSum="50">
+            <LinearLayout
+                android:layout_weight="16"
+                android:layout_width="match_parent"
+                android:layout_height="0px"></LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="21"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:weightSum="260"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_weight="21"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent">
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_question" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="21"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"></LinearLayout>
+                <LinearLayout
+                    android:layout_weight="188"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    >
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="1:1 문의하기"
+                        android:textColor="#1d1d1d"
+                        android:gravity="left"
+                        android:background="#00ff0000"
+                        android:id="@+id/btn_question_text"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

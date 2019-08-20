@@ -1,0 +1,142 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    package="com.zeyo.android">
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- This tag indicates that this application requires ARCore.  This results in the application
+           only being visible in the Google Play Store on devices that support ARCore. -->
+    <uses-feature android:name="android.hardware.camera.ar" android:required="true"/>
+    <application
+        android:name=".KakaoLogin.GlobalApplication"
+        android:networkSecurityConfig="@xml/network_sercurity_config"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_zeyo_app"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_zeyo_app"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+
+            android:name="com.kakao.sdk.AppKey"
+
+            android:value="46156021a779fe3a29a6b70e7df8a9a4" />
+
+
+        <activity
+            android:name="com.zeyo.android.MainActivity"
+            android:theme="@style/AppTheme.main"
+            android:screenOrientation="unspecified">
+        </activity>
+        <activity
+            android:name="com.zeyo.android.ClinetManage.NaverLogin"
+            android:theme="@style/AppTheme.main"
+            android:screenOrientation="unspecified">
+        </activity>
+        <activity
+            android:name="com.zeyo.android.Measure.GuideViewPager"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="unspecified">
+        </activity>
+        <activity
+            android:name="com.zeyo.android.Measure.InnerGuideViewPager"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="unspecified">
+
+        </activity>
+        <activity
+            android:name="com.zeyo.android.Measure.StartMeasure"
+            android:theme="@style/AppTheme.main"
+            android:screenOrientation="unspecified"/>
+        <!-- This tag indicates that this application requires ARCore.  This results in the Google Play
+                 Store downloading and installing ARCore along with the application. -->
+        <activity
+            android:name="com.zeyo.android.Measure.MeasureActivity"
+            android:theme="@style/AppTheme.fragment"
+            android:screenOrientation="unspecified" >
+        </activity>
+        <activity
+            android:name="com.zeyo.android.Measure.MeasureResultActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.main"
+            android:screenOrientation="unspecified" >
+        </activity>
+        <activity
+            android:name="com.zeyo.android.ClinetManage.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.main"
+            android:screenOrientation="unspecified" />
+        <activity
+            android:name="com.zeyo.android.ClinetManage.FindIDActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.main"
+            android:screenOrientation="unspecified" />
+        <activity
+            android:name="com.zeyo.android.LoadingActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Loading"
+            android:screenOrientation="unspecified" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.zeyo.android.ClinetManage.FindIDResultActivity"
+
+            android:screenOrientation="unspecified"
+            android:theme="@style/AppTheme.main"></activity>
+        <activity android:name="com.zeyo.android.ClinetManage.FindPWActivity"
+            android:screenOrientation="unspecified"
+            android:theme="@style/AppTheme.main"></activity>
+        <activity android:name="com.zeyo.android.ClinetManage.SignupActivity"
+        android:screenOrientation="unspecified"
+        android:theme="@style/AppTheme.main"></activity>
+
+        <activity android:name="com.zeyo.android.Drawer.PolicyActivity"
+            android:screenOrientation="unspecified"
+            android:theme="@style/AppTheme.main"></activity>
+        <activity android:name="com.zeyo.android.Drawer.QuestionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.main"></activity>
+        <activity android:name="com.zeyo.android.Drawer.QuestionSuccessActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.main"></activity>
+        <activity android:name="com.zeyo.android.ClinetManage.FindPWResultActivity"
+            android:screenOrientation="unspecified"
+            android:theme="@style/AppTheme.main"></activity>
+        <activity android:name="com.zeyo.android.ClinetManage.SignupSuccessActivity"
+            android:screenOrientation="unspecified"
+            android:theme="@style/AppTheme.main"></activity>
+        <activity android:name="com.zeyo.android.ClinetManage.ClosetActivity"
+            android:screenOrientation="unspecified"
+            android:theme="@style/AppTheme.main"></activity>
+        <activity android:name="com.zeyo.android.ClinetManage.ClosetDetailActivity"
+            android:screenOrientation="unspecified"
+            android:theme="@style/AppTheme.main"></activity>
+        <activity android:name="com.zeyo.android.ClinetManage.TutorialViewPager"
+            android:screenOrientation="unspecified"
+            android:theme="@style/Loading"></activity>
+        <activity android:name="com.zeyo.android.ClinetManage.Privacy"
+            android:screenOrientation="unspecified"
+            android:theme="@style/AppTheme.main"></activity>
+        
+        <!-- This tag indicates that this application requires ARCore.  This results in the Google Play
+                 Store downloading and installing ARCore along with the application. -->
+        <meta-data android:name="com.google.ar.core" android:value="optional" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="d65d4801872d155bea6d541b42f165284af96c83" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.zeyo.android.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+</manifest>

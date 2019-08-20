@@ -1,0 +1,3 @@
+<resources>
+    <retrofit name="base_url">"http://rest.dev.zeyo.co.kr/"</retrofit>
+</resources>

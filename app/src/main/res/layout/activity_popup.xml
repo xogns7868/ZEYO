@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="667"
+    android:background="#00ff0000">
+    <LinearLayout
+        android:layout_weight="264"
+        android:layout_width="match_parent"
+        android:layout_height="0px"></LinearLayout>
+    <LinearLayout
+        android:layout_weight="140"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:orientation="horizontal"
+        android:weightSum="375">
+        <LinearLayout
+            android:layout_weight="53"
+            android:layout_width="0px"
+            android:layout_height="match_parent"></LinearLayout>
+        <LinearLayout
+            android:layout_weight="270"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:background="@drawable/rectangle_popup"
+            android:orientation="vertical"
+            android:weightSum="140">
+            <LinearLayout
+                android:layout_weight="96"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:orientation="vertical"
+                android:weightSum="96">
+                <LinearLayout
+                    android:layout_weight="19"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"></LinearLayout>
+                <LinearLayout
+                    android:layout_weight="18"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="해당 옷을 삭제하시겠습니까?"
+                        android:textColor="#1d1d1d"
+                        android:textSize="17dp"
+                        android:gravity="center"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="15"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"></LinearLayout>
+                <LinearLayout
+                    android:layout_weight="18"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="13dp"
+                        android:textColor="#1d1d1d"
+                        android:text="삭제한 옷은 다시 복구할 수 없습니다."
+                        android:gravity="center"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="44"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:orientation="horizontal"
+                android:weightSum="270">
+                <LinearLayout
+                    android:layout_weight="135"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="17dp"
+                        android:textColor="#007aff"
+                        android:text="취소"
+                        android:background="#00ff0000"
+                        android:id="@+id/btn_cancle_popup"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="135"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="17dp"
+                        android:textColor="#007aff"
+                        android:text="삭제하기"
+                        android:background="#00ff0000"
+                        android:id="@+id/btn_delete_popup"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

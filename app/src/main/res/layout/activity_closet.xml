@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/dra_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/crd_snackbar">
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/closet_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:weightSum="667"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_weight="68"
+            android:layout_width="match_parent"
+            android:layout_height="0px">
+            <include layout="@layout/toolbar"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="50"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:background="@drawable/underline">
+            <include layout="@layout/in_back_arrow"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="549"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:orientation="vertical"
+            android:weightSum="549">
+            <LinearLayout
+                android:layout_weight="15"
+                android:layout_width="match_parent"
+                android:layout_height="0px"></LinearLayout>
+            <LinearLayout
+                android:layout_weight="534"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:orientation="horizontal"
+                android:weightSum="375">
+                <LinearLayout
+                    android:layout_weight="16"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"></LinearLayout>
+                <LinearLayout
+                    android:layout_weight="343"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rec_closet"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom"
+        android:id="@+id/coordinator_closet"/>
+
+</FrameLayout>
+    <include
+        layout="@layout/activity_drawer"
+        android:importantForAccessibility="no" />
+
+</androidx.drawerlayout.widget.DrawerLayout>
