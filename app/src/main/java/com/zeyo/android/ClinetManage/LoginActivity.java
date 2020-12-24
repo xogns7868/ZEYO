@@ -80,7 +80,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestScopes(new Scope(Scopes.DRIVE_APPFOLDER))
-                .requestServerAuthCode("377318499072-m8ab74k22aro7hskh1kiksolp7k0dr02.apps.googleusercontent.com")
+                .requestServerAuthCode("######.apps.googleusercontent.com")
                 .requestEmail()
                 .build();
         mGoogleApiClient = new GoogleApiClient.Builder(this)
@@ -220,8 +220,8 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
                 OkHttpClient client = new OkHttpClient();
                 FormBody.Builder formBuilder = new FormBody.Builder()
                         .add("grant_type", "authorization_code");
-                formBuilder.add("client_id", "377318499072-m8ab74k22aro7hskh1kiksolp7k0dr02.apps.googleusercontent.com")
-                        .add("client_secret", "t5npeVY6ztAB7WW-X-SWzpub")
+                formBuilder.add("client_id", "#######.apps.googleusercontent.com")
+                        .add("client_secret", "######")
                         .add("redirect_uri", "")
                         .add("code", authCode);
                 RequestBody requestBody = formBuilder.build();
@@ -279,7 +279,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
     public void call() {
         //카카오로그인으로 받아온 토큰을 전송함.
         //아직 api가 덜구현된것같음.(리스폰이 걍 []만 날라옴)
-        Call<JsonObject> call = apiInterface.postKakaoLogin(((LoadingActivity) LoadingActivity.context).token, "jvvzfj7p");
+        Call<JsonObject> call = apiInterface.postKakaoLogin(((LoadingActivity) LoadingActivity.context).token, "#####");
         call.enqueue(new Callback<JsonObject>() {
             @Override
             public void onResponse(Call<JsonObject> call, Response<JsonObject> response) {
