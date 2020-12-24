@@ -31,8 +31,8 @@ import retrofit2.http.Path;
 import retrofit2.http.Query;
 
 public interface APIInterface {
-    String zeyo_api_key = "QVntgqTsu6jqt7hQSVpF7ZS8Tw==";
-    String heronation_api_key = "66Gc6re4T1Prk5zsnKDsl5RaRVlU7J24VEU=";
+    String zeyo_api_key = "#####";
+    String heronation_api_key = "#####";
 
     @Headers({"Accept: application/json","Content-Type: application/x-www-form-urlencoded","Authorization: zeyo-api-key " + zeyo_api_key})
     @POST("api/consumers/registry")
