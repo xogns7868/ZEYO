@@ -19,8 +19,8 @@ import retrofit2.Response;
 public class NaverLogin extends AppCompatActivity {
     private static final String TAG = "OAuthSampleActivity";
 
-    private static String OAUTH_CLIENT_ID = "FErhZOHFFXjHRTFwqb11";
-    private static String OAUTH_CLIENT_SECRET = "mpcf8lbTq3";
+    private static String OAUTH_CLIENT_ID = "######";
+    private static String OAUTH_CLIENT_SECRET = "######";
     private static String OAUTH_CLIENT_NAME = "네이버 아이디로 로그인 테스트";
     APIInterface apiInterface;
 
